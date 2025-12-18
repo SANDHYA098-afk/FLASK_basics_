@@ -2,8 +2,20 @@
 {% block title %}Home{% endblock %}
 
 {% block content %}
-<div class="container">
-    <h1>Welcome to the Flask Application</h1>
-    <p>This is the home page using the base template.</p>
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="jumbotron bg-light p-5 rounded">
+                <h1 class="display-4">Welcome to the Flask Application</h1>
+                <p class="lead">This is a simple Flask web application with user authentication.</p>
+                <hr class="my-4">
+                <p>You can sign up for a new account or log in if you already have one.</p>
+                <div class="mt-4">
+                    <a class="btn btn-primary btn-lg me-2" href="/auth/signup" role="button">Sign Up</a>
+                    <a class="btn btn-outline-primary btn-lg" href="/auth/login" role="button">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 {% endblock %}
